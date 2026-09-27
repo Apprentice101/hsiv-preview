@@ -1,0 +1,75 @@
+:root{--bg:#f5f3ed;--paper:#fffefa;--ink:#203844;--muted:#59676b;--border:#d7dbd4;--green:#e2ecdf;--green-ink:#294f35;--gold:#e3bd62;--tile:#e8ebe8;--focus:#397784;--wash:#eeeee6;--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s6:24px;--s8:32px;--s10:40px;--s12:48px;--s16:64px;--s20:80px}
+html[data-theme=dark]{--bg:#17262c;--paper:#203139;--ink:#f1f0e8;--muted:#bcc8ca;--border:#40525a;--green:#314d3b;--green-ink:#dbead7;--gold:#d6af58;--tile:#34484e;--focus:#82b6c4;--wash:#283d45}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",Arial,sans-serif}
+.wrap{width:min(1160px,calc(100% - 64px));margin-inline:auto}.preview-bar{background:var(--ink);color:var(--bg);padding:8px 24px;text-align:center;font-size:11px;letter-spacing:.1em;font-weight:700}.preview-bar span{font-weight:400;letter-spacing:0;margin-left:16px;font-size:12px}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:26px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:18px;font-weight:600;letter-spacing:-.4px}.brand svg{width:34px;height:34px;flex-shrink:0}.brand b{font-weight:400}.site-header nav{display:flex;gap:24px;align-items:center;font-size:13px}.site-header nav a{text-decoration:none}.quiet{border:1px solid var(--border);border-radius:30px;background:transparent;padding:8px 14px;font-size:12px}.hero{padding-block:64px 48px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em}.hero h1{font:normal clamp(36px,4.3vw,58px)/1.09 Georgia,"Times New Roman",serif;letter-spacing:-1.7px;max-width:840px;margin-top:20px}.hero h1 span{color:var(--green-ink)}.hero>p{margin-top:24px;color:var(--muted);font-size:17px;line-height:1.7}.hero-bottom{display:flex;gap:24px;margin-top:28px;font-size:12px;color:var(--muted)}.hero-bottom span+span{border-left:1px solid var(--border);padding-left:24px}
+.journey{display:grid;gap:24px}.panel{background:var(--paper);border:1px solid var(--border);border-radius:6px;padding:32px}.section-heading{display:flex;align-items:flex-start;gap:16px;margin-bottom:28px}.step{font-size:12px;line-height:30px;width:32px;text-align:center;border:1px solid var(--border);border-radius:50%;flex-shrink:0}.section-heading h2{font:normal 28px/1.2 Georgia,serif;letter-spacing:-.6px}.section-heading p{font-size:13px;margin-top:8px;color:var(--muted)}.counter{margin-left:auto;white-space:nowrap;font-size:12px;background:var(--wash);padding:6px 12px;border-radius:24px}
+.issue-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.issue-option{display:flex;align-items:center;text-align:left;justify-content:space-between;gap:10px;min-height:60px;border:1px solid var(--border);border-radius:4px;background:transparent;padding:12px;font-size:13px;font-weight:600}.issue-option::after{content:"+";font-weight:400;font-size:18px;color:var(--muted)}.issue-option:hover{border-color:var(--ink)}.issue-option[aria-pressed=true]{background:var(--green);border-color:var(--green-ink);color:var(--green-ink)}.issue-option[aria-pressed=true]::after{content:"−";color:var(--green-ink)}.selection-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;gap:16px;font-size:12px;color:var(--muted)}.text-button{border:0;padding:4px 0;background:none;text-decoration:underline;text-underline-offset:3px;font-size:12px;white-space:nowrap}
+.state-layout{display:grid;grid-template-columns:1.5fr 1fr;gap:40px}.map-area{min-width:0}.tile-map{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;max-width:600px;margin:8px 0 24px}.state-tile{font-size:11px;font-weight:600;aspect-ratio:1;border:1px solid transparent;border-radius:3px;background:var(--tile);min-width:0;padding:0}.state-tile[data-code=ME]{background:var(--gold);color:#263944}.state-tile[aria-pressed=true]{outline:2px solid var(--ink);outline-offset:1px}.state-tile:hover{border-color:var(--ink)}.map-legend{display:flex;gap:16px;font-size:11px;flex-wrap:wrap}.map-legend span{display:flex;align-items:center;gap:8px}.map-legend i{display:inline-block;width:10px;height:10px;background:var(--tile);border:1px solid var(--border);border-radius:2px}.map-legend .gold-dot{background:var(--gold);border-color:var(--gold)}.micro{font-size:11px;color:var(--muted);line-height:1.5;margin-top:12px;max-width:480px}.race-panel{border-left:1px solid var(--border);padding-left:32px}.race-panel label{display:block;font-size:12px;font-weight:600;margin-bottom:8px}select{width:100%;background:var(--paper);border:1px solid var(--border);color:var(--ink);padding:11px 12px;border-radius:4px;font-size:14px}.availability{font-size:11px;color:var(--muted);margin-block:12px 20px}.race-panel .primary{width:100%;margin-top:16px}.primary{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:12px 16px;border-radius:4px;font-size:13px;font-weight:600}.primary:disabled{opacity:.45}.guide{margin-top:20px;padding-top:16px;border-top:1px solid var(--border);font-size:12px}.guide a{font-weight:600}.guide p{color:var(--muted);margin-top:4px}.unavailable h3{font:normal 23px Georgia,serif;margin-top:24px}.unavailable p{font-size:13px;color:var(--muted);margin-block:12px}.empty{text-align:center;padding:32px 16px 40px;background:var(--bg);border:1px dashed var(--border);border-radius:4px}.empty-line{width:48px;height:3px;background:var(--gold);margin:0 auto 20px}.empty h3{font:normal 24px Georgia,serif}.empty p{color:var(--muted);font-size:13px;margin-top:12px}.result-note{background:var(--wash);font-size:12px;padding:12px 16px;border-radius:4px;margin-bottom:24px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.candidate{border:1px solid var(--border);border-radius:4px;overflow:hidden}.candidate-header{padding:24px;background:var(--bg);border-bottom:1px solid var(--border)}.sample-tag{font-size:10px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}.candidate h3{font:normal 30px Georgia,serif;margin-top:8px}.candidate-meta{font-size:12px;color:var(--muted);margin-top:8px}.campaign-slot{font-size:11px;color:var(--muted);margin-top:12px;border-top:1px solid var(--border);padding-top:12px}.issue-block{margin-inline:24px;padding-block:24px;border-bottom:1px solid var(--border)}.issue-label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.issue-label h4{margin:0;font-size:14px;font-weight:600}.selected-tag{font-size:10px;background:var(--green);color:var(--green-ink);padding:3px 8px;border-radius:3px}.summary-copy{font-size:14px;margin-top:12px;color:var(--muted)}details{font-size:12px}summary{padding-block:12px;color:var(--ink);font-weight:600}details[open]>summary{margin-bottom:4px}.evidence{padding:16px;background:var(--bg);border-left:2px solid var(--border);color:var(--muted)}.evidence p+p{margin-top:8px}.other{margin:8px 24px 16px}.other>summary{font-size:14px}.other .issue-block{margin:0;padding-block:16px}.other-count{color:var(--muted);font-weight:400;font-size:11px;margin-left:8px}.explain-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:40px 8px 56px}.explain-grid h2{font:normal 27px Georgia,serif;margin-top:12px}.explain-grid p{font-size:14px;color:var(--muted);margin-top:16px;line-height:1.75}footer{border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:24px;padding-block:24px 32px;font-size:11px;color:var(--muted)}.skip{position:absolute;top:-100px;left:16px;background:var(--paper);padding:16px;z-index:5}.skip:focus{top:12px}
+@media(max-width:900px){.issue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.state-layout{gap:24px;grid-template-columns:1.2fr 1fr}.race-panel{padding-left:24px}.hero h1{max-width:720px}.counter{font-size:10px}}
+@media(max-width:640px){.wrap{width:calc(100% - 32px)}.preview-bar{padding:8px 12px;font-size:9px}.preview-bar span{font-size:10px;margin-left:8px}.site-header{padding-block:20px;gap:12px}.brand{font-size:14px;gap:8px;max-width:240px}.brand svg{width:26px;height:26px}.site-header nav{gap:8px}.site-header nav>a{display:none}.quiet{padding:7px 10px;font-size:10px;white-space:nowrap}.hero{padding-block:40px 32px}.hero h1{font-size:38px;letter-spacing:-1px;line-height:1.13}.hero>p{font-size:15px}.desktop{display:none}.hero-bottom{font-size:10px;gap:12px}.hero-bottom span+span{padding-left:12px}.panel{padding:24px 16px}.section-heading{gap:12px;flex-wrap:wrap;margin-bottom:24px}.section-heading>div{flex:1;min-width:200px}.section-heading h2{font-size:24px}.counter{margin-left:44px;margin-top:-4px;font-size:11px}.issue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.issue-option{font-size:12px;min-height:58px;padding:10px}.selection-foot{align-items:flex-start}.selection-foot p{max-width:200px}.state-layout{display:block}.state-tile{font-size:8px}.tile-map{gap:3px}.race-panel{border-left:0;padding:24px 0 0;margin-top:24px;border-top:1px solid var(--border)}.map-legend{font-size:10px;gap:12px}.cards{grid-template-columns:1fr}.candidate-header{padding:20px}.issue-block{margin-inline:20px}.other{margin-inline:20px}.explain-grid{grid-template-columns:1fr;gap:32px;padding:24px 8px 40px}footer{flex-wrap:wrap;gap:12px}footer span:nth-child(2){display:none}.empty{padding:28px 12px}.empty h3{font-size:22px}}
+
+/* Approved compact editorial direction: reduce framing, not reading size. */
+/* Decorative rippled flag wash, angled with stars in the upper left. */
+body{position:relative;isolation:isolate}
+.flag-backdrop{
+  position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
+  opacity:.085;
+}
+.flag-backdrop canvas{display:block;width:100%;height:100%}
+html[data-theme=dark] .flag-backdrop{opacity:.045}
+:root{
+  --text-xs:clamp(.75rem,.72rem + .12vw,.8125rem);
+  --text-sm:clamp(.875rem,.85rem + .1vw,.9375rem);
+  --text-body:1rem;
+  --text-heading:clamp(1.5rem,1.35rem + .5vw,1.75rem);
+  --text-hero:clamp(1.875rem,1.45rem + 1.7vw,2.75rem);
+}
+.site-header{padding-block:var(--s4)}
+.hero{padding-block:var(--s8)}
+.hero h1{font-size:var(--text-hero);line-height:1.12;letter-spacing:-1px;margin-top:var(--s3);max-width:880px;text-wrap:balance}
+.hero>p{margin-top:var(--s4);font-size:var(--text-body);line-height:1.55;max-width:780px}
+.hero-bottom{margin-top:var(--s4);font-size:var(--text-xs);gap:var(--s4)}
+.hero-bottom span+span{padding-left:var(--s4)}
+.journey{gap:var(--s4)}
+.panel{padding:var(--s6)}
+.section-heading{margin-bottom:var(--s4);gap:var(--s3)}
+.section-heading h2{font-size:var(--text-heading)}
+.section-heading p{font-size:var(--text-sm);margin-top:var(--s1)}
+.step{border:0;border-radius:0;width:24px;line-height:28px;color:var(--muted);text-align:left;font-size:var(--text-xs)}
+.issue-grid{gap:var(--s2)}
+.issue-option{min-height:52px;padding:var(--s3);font-size:var(--text-sm)}
+.preview-bar,.preview-bar span,.eyebrow,.quiet,.counter,.selection-foot,.text-button,
+.map-legend,.micro,.availability,.race-panel label,.sample-tag,.selected-tag,
+.campaign-slot,.other-count,footer{font-size:var(--text-xs)}
+.quiet,.text-button{min-height:36px}
+.guide,.result-note,.candidate-meta,details,.site-header nav,.primary{font-size:var(--text-sm)}
+.summary-copy,.explain-grid p{font-size:var(--text-body)}
+.candidate-header{padding:var(--s4) var(--s6)}
+.candidate h3{font-size:var(--text-heading)}
+.issue-block{padding-block:var(--s4)}
+.summary-copy{margin-top:var(--s2)}
+.result-note{margin-bottom:var(--s4)}
+.cards{gap:var(--s4)}
+.empty{padding:var(--s6) var(--s4)}
+.explain-grid{gap:var(--s10);padding:var(--s6) var(--s2) var(--s8)}
+.explain-grid p{line-height:1.6;margin-top:var(--s3)}
+.explain-grid h2{font-size:var(--text-heading)}
+.state-tile{font-size:var(--text-xs)}
+@media(max-width:640px){
+  .preview-bar{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s1) var(--s2)}
+  .preview-bar span{margin:0}
+  .hero{padding-block:var(--s6)}
+  .hero h1{letter-spacing:-.6px}
+  .hero-bottom{flex-wrap:wrap;gap:var(--s1) var(--s3)}
+  .hero-bottom span+span{padding-left:0;border:0}
+  .panel{padding:var(--s4)}
+  .section-heading>div{min-width:0;flex-basis:calc(100% - 36px)}
+  .counter{margin-left:36px;margin-top:0}
+  .issue-option{min-height:52px;padding:var(--s2)}
+  .candidate-header{padding:var(--s4)}
+  .issue-block{margin-inline:var(--s4)}
+  .other{margin-inline:var(--s4)}
+  .map-legend{gap:var(--s2)}
+  .explain-grid{gap:var(--s6)}
+}

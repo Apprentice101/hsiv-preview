@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A design preview for How Should I Vote 2026. Sample layouts only, not candidate research.">
+  <title>How Should I Vote 2026 · Design preview</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="flag-backdrop" aria-hidden="true" inert><canvas id="flag-canvas"></canvas></div>
+  <a class="skip" href="#issues">Skip to issue selection</a>
+  <div class="preview-bar">DESIGN PREVIEW <span>Sample content only. No state counting enabled.</span></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="How Should I Vote 2026 home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="7" width="34" height="29" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 15h18M15 23h10M20 3v8" stroke="currentColor" stroke-width="2"/></svg>
+      <span>How Should I Vote <b>2026</b></span>
+    </a>
+    <nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><button id="theme" class="quiet" type="button">Dark view</button></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">YOUR ISSUES. YOUR CHOICE.</div>
+      <h1>See where candidates stand on the issues that <span>matter to you.</span></h1>
+      <p>Choose up to three issues, then your state and a Congressional race. Explore documented positions and make your own decision.</p>
+      <div class="hero-bottom"><span>U.S. Senate &amp; U.S. House</span><span>No scores. No recommendations.</span></div>
+    </section>
+    <div class="wrap journey">
+      <section id="issues" class="panel" aria-labelledby="issues-title" tabindex="-1">
+        <div class="section-heading"><span class="step">01</span><div><h2 id="issues-title">What matters to you?</h2><p>Select one to three issues. Choosing a topic does not indicate a policy position.</p></div><span id="count" class="counter">0 of 3 selected</span></div>
+        <div id="issue-buttons" class="issue-grid" role="group" aria-label="Choose up to three issues"></div>
+        <div class="selection-foot"><p id="selection-message" role="status">Your choices stay in this open page.</p><button id="clear" class="text-button" type="button">Clear choices</button></div>
+      </section>
+      <section id="location" class="panel" aria-labelledby="location-title">
+        <div class="section-heading"><span class="step">02</span><div><h2 id="location-title">Find your state and race</h2><p>Start with Maine to explore the sample. More states will follow.</p></div></div>
+        <div class="state-layout">
+          <div class="map-area">
+            <div id="state-map" class="tile-map" role="group" aria-label="Schematic map of all 50 states"></div>
+            <div class="map-legend"><span><i class="gold-dot"></i>Maine pilot layout</span><span><i></i>No preview available</span></div>
+            <p class="micro">Schematic state map, not geographic boundaries. Gold shows sample availability in this preview, not completed research.</p>
+          </div>
+          <div class="race-panel">
+            <label for="state-select">State</label><select id="state-select"></select>
+            <div id="state-content"></div>
+          </div>
+        </div>
+      </section>
+      <section id="results" class="panel results" aria-labelledby="results-title">
+        <div class="section-heading"><span class="step">03</span><div><h2 id="results-title">Explore candidate positions</h2><p id="results-subtitle">Your selected issues will appear first on every card.</p></div></div>
+        <div id="candidate-content" class="empty"><div class="empty-line"></div><h3>Your candidates, your priorities</h3><p>Choose at least one issue and a Maine race, then select<br class="desktop"> “View candidate positions” to explore the card layout.</p></div>
+      </section>
+      <section id="how-it-works" class="explain-grid" aria-label="About this guide">
+        <div><div class="eyebrow">A GUIDE, NOT A VERDICT</div><h2>How this will work</h2><p>Choose the topics you want to explore. Candidate summaries will describe documented statements and actions, with evidence you can open and read yourself.</p><p>Candidates will appear alphabetically by last name. Every candidate in a covered ballot roster will remain visible, even when research is incomplete.</p></div>
+        <div><div class="eyebrow">CLEAR ABOUT OUR LIMITS</div><h2>What we do &amp; don’t claim</h2><p>HSIV will not score agreement, recommend candidates, or infer your beliefs. Missing information describes the limits of our research, not a candidate’s views.</p><p>This preview contains no real candidate research. Source standards and the publishing process are still being developed.</p></div>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap"><span>How Should I Vote 2026</span><span>Independent choices begin with clear information.</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
